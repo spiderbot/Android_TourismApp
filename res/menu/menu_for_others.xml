@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/lookupdirectly"
+        android:title="Search For Any Location Here"/>
+    <item
+        android:id="@+id/gotomain"
+        android:title="Go To The Home Screen"/>
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"/>
+
+</menu>

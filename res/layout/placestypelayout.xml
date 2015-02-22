@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2" >
+
+    <ImageView
+        android:id="@+id/imageofplace"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nameofplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageofplace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="name" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/nameofplace"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+</RelativeLayout>
