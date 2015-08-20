@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atomic.lock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" 
+    />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+   
+        <activity android:label="@string/app_name"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+          android:screenOrientation="portrait"
+          android:excludeFromRecents="true"
+          android:name="com.piyush.LockScreen"
+          android:launchMode="singleInstance"
+          android:background="@android:color/transparent" >
+          <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.ANSWER" />
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT" />  
+        </intent-filter> 
+        </activity>
+
+        <activity
+            android:name="com.piyush.PreferenceLockScreen"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance">
+        <intent-filter >
+        </intent-filter> 
+		</activity>
+        
+        <activity
+            android:name="com.piyush.StartLockScreen"
+            android:theme="@style/Theme.Transparent">
+		</activity>
+
+        <activity
+            android:name="com.piyush.CreateGestureActivity"
+            
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+		</activity>
+		        <activity
+            android:name="com.piyush.GestureBuilderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+		</activity>
+  
+        <activity android:label="@string/app_name"
+          android:theme="@android:style/Theme.NoTitleBar"
+          android:screenOrientation="portrait"
+          android:excludeFromRecents="false"
+          android:name="com.piyush.HomeScreen">
+            <intent-filter>
+                     <action android:name="android.intent.action.MAIN" />    
+                     <category android:name="android.intent.category.DEFAULT" /> 
+                     <category android:name="android.intent.category.LAUNCHER" /> 
+          </intent-filter>
+        </activity>
+
+        <activity android:label="@string/app_name"
+          android:screenOrientation="portrait"
+          android:excludeFromRecents="false"
+          android:name="com.piyush.GlobalVariables">
+        </activity>
+
+		<activity
+            android:name="com.piyush.Preferences"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />    
+            </intent-filter>
+        </activity> 
+ 
+		<activity
+            android:name="com.piyush.SetPinDialog"
+            android:label="@string/app_name">
+        </activity>    
+ 
+        <service android:name="com.piyush.MyService" >
+        </service>
+
+        <receiver
+            android:enabled="true"
+            android:name="receiver.LockScreenReceiver" 
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+		<activity android:name="com.google.ads.AdActivity"
+          android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>  
+
+    </application>
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+ 	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+ 	<uses-permission android:name="android.permission.GET_TASKS"/>
+ 	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS">
+    </uses-permission>
+        <!-- ******************************************************************************************************************** -->
+</manifest>

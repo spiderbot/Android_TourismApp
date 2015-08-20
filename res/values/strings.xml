@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World</string>
+    <string name="app_name">GBPEC Lock</string>
+    <string name="unloack">Unlock</string>
+    <color name="mycolor1">#F5DC49</color>
+    <string name="PASS">PASS</string>
+    <string name="PIN">PIN</string>
+    <string name="Atomic_Lock">GBPEC Lock</string>
+    <string name="Atomic">GBPEC</string>
+    <string name="Lock">Lock</string>
+
+    <!-- General -->
+    <skip />
+    <string name="application_name">Gestures Builder</string>
+    <string name="label_create_gesture">Create a gesture</string>
+
+    <skip />
+    <string name="button_add">Add gesture</string>
+    <string name="button_reload">Reload</string>
+    <string name="button_discard">Discard</string>
+    <string name="button_done">Done</string>
+    
+    <skip />
+    <string name="prompt_gesture_name">Name</string>
+    <string name="error_missing_name">You must enter a name</string>
+    <string name="save_success">Gesture saved in %s</string>
+    <string name="rename_action">OK</string>
+    <string name="cancel_action">Cancel</string>
+    <string name="gestures_loading">Loading gestures...</string>
+    <string name="gestures_empty">No gestures</string>
+    <string name="gestures_activity">Gestures</string>
+    <string name="gestures_rename">Rename</string>
+    <string name="gestures_delete">Delete</string>
+    <string name="gestures_delete_success">Gesture deleted</string>
+    <string name="gestures_rename_title">Rename gesture</string>
+    <string name="gestures_rename_label">Gesture name</string>
+    <string name="gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
+			
+	<string-array name="array_list_preference_entries">
+		<item>Immediately</item>
+		<item>5 seconds</item>
+		<item>15 seconds</item>
+		<item>30 seconds</item>
+		<item>1 minute</item>
+		<item>2 minutes</item>
+		<item>5 minutes</item>
+		<item>10 minutes</item>
+		<item>30 minutes</item>   
+	</string-array>
+	
+	<string-array name="array_list_preference_entry_values">
+		<item>0.0</item>
+		<item>5.0</item>
+		<item>15.0</item>
+		<item>30.0</item>
+		<item>60.0</item>
+		<item>120.0</item>
+		<item>300.0</item>
+		<item>600.0</item>
+		<item>1800.0</item>    
+	</string-array>
+	
+</resources>

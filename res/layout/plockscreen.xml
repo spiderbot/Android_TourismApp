@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" 
+    android:id="@+id/lockscreen4">
+
+   	<LinearLayout
+    	    android:id="@+id/ads"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="0dp"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_gravity="center_horizontal|center"
+    	    android:clickable="false"
+    	    android:layout_weight="1"
+    	    >
+    	    
+   	    <TextView  
+            android:id="@+id/passSecurity"       
+            android:layout_width="wrap_content"         
+            android:layout_height="wrap_content"            
+            android:adjustViewBounds="true"   
+            android:layout_gravity="top|center"  
+            android:gravity="center"                                     
+            android:textStyle="bold"
+            android:textSize="20dip"                   
+            android:textColor="#ffff0000"                     
+            android:text="PLEASE PASS SECURITY MEASURES TO EDIT SETTINGS" />     
+   	    
+	</LinearLayout> 
+	
+	<LinearLayout
+	    android:layout_height="0dp"
+	    android:layout_width="fill_parent"
+	    android:layout_weight="8"
+	    android:id="@+id/lockscreen5">    
+	    
+	    <android.gesture.GestureOverlayView
+	            android:id="@+id/gestures_overlay_lock2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="match_parent"
+	            android:fadeOffset="500"            
+	            android:gestureStrokeType="multiple" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="#000000" 
+	    android:id="@+id/lockscreen6">
+	    
+	                <ImageView
+	                     android:id="@+id/pin2"
+	                     android:layout_width="0dip"
+	                     android:layout_height="fill_parent"
+	                     android:layout_weight="1"
+	                     android:layout_marginBottom="2dp"
+	                     android:layout_marginTop="2dp"
+	                     android:padding="2dp"
+	                     android:src="@drawable/passwordicon" />   
+	
+	                 <ImageView
+	                     android:id="@+id/imageView1"
+	                     android:layout_width="0dip"
+	                     android:layout_height="fill_parent"
+	                     android:layout_weight="1"
+	                     android:layout_marginBottom="2dp"
+	                     android:layout_marginTop="2dp"
+	                     android:padding="2dp"
+	                     android:src="@drawable/appicon" />     
+	
+	                <ImageView
+	                     android:id="@+id/password2"
+	                     android:layout_width="0dip"
+	                     android:layout_height="fill_parent"
+	                     android:layout_weight="1"
+	                     android:layout_marginBottom="2dp"
+	                     android:layout_marginTop="2dp"
+	                     android:padding="2dp"
+	                     android:src="@drawable/pinicon" />   
+	</LinearLayout>
+ 
+</LinearLayout> 
+

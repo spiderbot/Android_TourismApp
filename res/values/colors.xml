@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="gesture_color">#FFFFFF00</color>
+    <color name="color_filter">#A5FF0000</color>
+</resources>

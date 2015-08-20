@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory 
+	    android:title="Settings">
+	    
+	    <PreferenceScreen
+            android:title="Customize Your Gesture">
+            <intent 
+		    android:action="android.intent.action.MAIN" 
+		    android:targetPackage="com.atomic.lock" 
+		    android:targetClass="com.atomic.lock.GestureBuilderActivity" />
+        </PreferenceScreen>
+        
+	    <ListPreference 
+	        android:key="launchers"
+	        android:title="Select Your Prefered Launcher"
+            android:textColor="#ff0000"	 
+	    />   
+	    
+	    <CheckBoxPreference 
+	        android:key="service"
+	        android:title="Atomic Lock Enabled" />        	 
+	    	    
+	    <CheckBoxPreference 
+	        android:key="keyguard"
+	        android:title="Disable Default Lock Screen" /> 
+	    
+	    <SwitchPreference
+    		android:key="enablePin"
+    		android:title="Enable Pin" />
+	    
+	    <SwitchPreference
+    		android:key="enablePass"
+    		android:title="Enable Pass" />
+	    
+	    <ListPreference 
+	        android:key="lp_list_preference"
+	        android:title="Set Auto Screen Lock Timer"
+	        android:entries="@array/array_list_preference_entries"
+	        android:entryValues="@array/array_list_preference_entry_values"	        
+	    />   
+	    
+	    </PreferenceCategory> 
+	
+	<PreferenceCategory 
+	    android:title="Social">
+            
+	    <PreferenceScreen
+                android:title="My Blog"
+                android:summary="For more info visit my blog">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.xtremecodeblog.blogspot.com" />
+        </PreferenceScreen>
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>
