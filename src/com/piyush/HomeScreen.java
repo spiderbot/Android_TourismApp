@@ -24,6 +24,7 @@ public class HomeScreen extends Activity {
 	GlobalVariables g = GlobalVariables.getInstance();
 
 	public void onCreate(Bundle savedInstanceState) {
+		Log.w("entering");
 	            super.onCreate(savedInstanceState);
 
 	    		g.setContext(getApplicationContext());
