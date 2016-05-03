@@ -43,6 +43,7 @@ import android.util.Log;
 			
 	@Override
 	public void onCreate() {
+		Log.w("piyush");
 		Log.w("com.atomic.lock", "Service RUN");
 
 	     IntentFilter filterScreen = new IntentFilter(Intent.ACTION_SCREEN_OFF);
