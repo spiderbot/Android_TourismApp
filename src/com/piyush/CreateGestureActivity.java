@@ -29,7 +29,7 @@ public class CreateGestureActivity extends Activity {
     private final String path = new File(Environment.getExternalStorageDirectory(),"gestures").getAbsolutePath();
     private WallpaperManager wallpaperManager;
     private Drawable wallpaperDrawable;
-
+    private String string;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
