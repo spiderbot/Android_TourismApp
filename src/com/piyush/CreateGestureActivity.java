@@ -32,6 +32,7 @@ public class CreateGestureActivity extends Activity {
     private String string;
     //comment
     //commenting again
+    //checking
     private int i;
     private double d;
     @Override
