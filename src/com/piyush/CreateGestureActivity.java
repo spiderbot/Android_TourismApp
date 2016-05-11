@@ -30,6 +30,9 @@ public class CreateGestureActivity extends Activity {
     private WallpaperManager wallpaperManager;
     private Drawable wallpaperDrawable;
     private String string;
+    //comment
+    private int i;
+    private double d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
