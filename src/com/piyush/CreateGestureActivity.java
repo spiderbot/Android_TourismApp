@@ -31,6 +31,7 @@ public class CreateGestureActivity extends Activity {
     private Drawable wallpaperDrawable;
     private String string;
     //comment
+    //commenting again
     private int i;
     private double d;
     @Override
