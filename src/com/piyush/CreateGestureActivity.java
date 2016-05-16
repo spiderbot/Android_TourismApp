@@ -21,7 +21,7 @@ import com.piyush.R;
 public class CreateGestureActivity extends Activity {
     private static final float LENGTH_THRESHOLD = 200.0f;
     private static final float LENGTH_MAX = 5000.0f;
-
+    private String str;
     private Gesture mGesture;
     private View mDoneButton;
     private GestureOverlayView clearOverlay;
