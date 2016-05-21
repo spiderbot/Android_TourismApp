@@ -21,6 +21,8 @@ import android.widget.Toast;
 
 
 public class HomeScreen extends Activity {
+
+
 	GlobalVariables g = GlobalVariables.getInstance();
 
 	public void onCreate(Bundle savedInstanceState) {
