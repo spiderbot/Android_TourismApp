@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:au="antlib:org.apache.ant.antunit" name="DacxFetcher" default="push" basedir=".">
+   <target name="info">
+      <echo>Apache Ant version is ${ant.version} - Hii Piyush Johsi</echo>
+   </target>
+   <macrodef name="git">
+      <attribute name="command" />
+      <attribute name="dir" default="" />
+      <element name="args" optional="true" />
+      <sequential>
+         <echo message="git @{command}" />
+         <exec executable="git" dir="@{dir}">
+            <arg value="@{command}" />
+            <args />
+         </exec>
+      </sequential>
+   </macrodef>
+   <macrodef name="git-clone-pull">
+      <attribute name="repository" />
+      <attribute name="dest" />
+      <sequential>
+         <git command="clone">
+            <args>
+               <arg value="@{repository}" />
+               <arg value="@{dest}" />
+            </args>
+         </git>
+         <git command="pull" dir="@{dest}" />
+      </sequential>
+   </macrodef>
+
+
+    <!-- <target name="deploy" depends="file-checks, local-file, git-file"/>
+
+    <target name="file-checks">
+        <echo message="checking" />
+       <available file="/home/piyushjoshi/summernote.jar"  property="file.found"/>
+    </target>
+
+    <target name="local-file" if="file.found">
+        <echo message="File is available in Local" />
+    </target> -->
+
+<macrodef name = "git-push">
+		<attribute name = "path" />
+		<attribute name = "branch" />
+		<attribute name = "head" />
+		<sequential>
+			<git command = "push" dir="@{path}">
+				<args>
+					<arg value = "@{branch}" />
+					<arg value = "@{head}" />
+				</args>
+			</git>
+		</sequential>
+	</macrodef>
+    <target name="git-tag">
+        <git command = "tag">
+            <args>
+
+		<arg value="-a"/>
+		<arg value="v1.5"/>
+		<arg value="-m"/>
+		<arg value="v1.5"/>
+		
+            </args>
+        </git> 
+    </target>
+
+<target name="push" depends="git-tag">
+        <git command = "push">
+            <args>
+
+		<arg value="origin"/>
+		<arg value="v1.5"/>
+		
+		
+            </args>
+        </git> 
+    </target>
+
+
+<!-- <git command = "archive" -->
+
+
+  
+</project>
